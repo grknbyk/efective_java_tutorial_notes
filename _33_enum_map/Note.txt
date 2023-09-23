@@ -1,0 +1,8 @@
+		// Using ordinal() to index into an array - DON'T DO THIS! (Page 171)
+		
+		// Dizilerle genericler uyumlu değiller. Kontrolsüz tür dönüştürmek zorunda kalıyoruz.
+		// indis sorumluluğu senin üstünde
+
+        // use enummap
+
+        Plant.java ve Phase.java dosyalarına bakabilirsin.

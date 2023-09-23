@@ -1,0 +1,26 @@
+	// Tür güvenliği yok.
+	// Debug zorlaşacak
+	public static final int APPLE_FUJI         = 0;
+	public static final int APPLE_PIPPIN       = 1;
+	public static final int APPLE_GRANNY_SMITH = 2;
+	 
+	public static final int ORANGE_NAVEL  = 0;
+	public static final int ORANGE_TEMPLE = 1;
+	public static final int ORANGE_BLOOD  = 2;
+	
+	//////////////////////////////////////////
+	
+	// yukarıdaki gibi tanımlamak yerine enum kullanması daha kolay debug edilebilir ve tür güvenliği sağlar.
+	// yukarda değerler int tipinde tutulurken enum sabitleri kendi türlerinde tutulur.
+	public enum Apple  { FUJI, PIPPIN, GRANNY_SMITH }
+	public enum Orange { NAVEL, TEMPLE, BLOOD }
+	
+	Singletonların genelleştirilmiş hali enum olarak düşünülebilir.
+
+*** Önemli ve genel not:
+    Derleme anında değerlerini bildiğiniz bir grup değişmeze ne zaman ihtiyaç duyarsanız enum kullanın
+	
+	Her enum sabiti için farklı davranışlar belirlemeniz gereken durumlarda switch deyimi ile farklı davranışları kodlamak yerine 
+	enum içinde soyut bir metot tanımlayıp her enum sabiti için bu metodu geçersiz kılın. 
+	Eğer bazı enum sabitlerinin davranışları birbiriyle aynı ise strateji enum desenini uygulayın.
+	

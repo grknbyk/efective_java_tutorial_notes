@@ -1,0 +1,52 @@
+Static factory methods 
+değişken isimli constructor üretmemizi sağlar.
+alt classlardan obje üretmemizi sağlar.
+örnek1: elimizde yemek super class olsun. ve bunları extenedleyen alt classlar olsun.
+
+public class Yemek {
+	
+	String name;
+
+	
+
+	public static Yemek soğukYemek(String name)
+	{
+		// Soğuk yemek
+		return new soğukYemek();
+	}
+	
+	public static Yemek sıcakYemek(String name)
+	{
+		return new sıcakYemek();
+	}
+
+};
+
+Yemek.soğukYemek("cacık"), Yemek.sıcakYemek("dolma") diyerek çağırabiliriz
+
+ÖRNEK 2 -------------------------
+
+public class Renk {
+    private int kirmizi, yesil, mavi;
+
+    // Private constructor to prevent direct instantiation
+    private Renk(int kirmizi, int yesil, int mavi) {
+        this.kirmizi = kirmizi;
+        this.yesil = yesil;
+        this.mavi = mavi;
+    }
+
+    public static Renk kirmizi() {
+        return new Renk(255, 0, 0);
+    }
+
+    public static Renk yesil() {
+        return new Renk(0, 255, 0);
+    }
+
+    public static Renk mavi() {
+        return new Renk(0, 0, 255);
+    }
+
+
+}

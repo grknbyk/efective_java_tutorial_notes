@@ -1,0 +1,7 @@
+Tür belirtmek için kullanılabilir. Cloneable ve Serializable örnek
+
+Eğer bir sınıfın belli bir özellik kazanmasını istiyorsanız ve bu özellik sadece sınıfın türüne bağlıysa, 
+marker interface kullanabilirsiniz.
+
+Eğer bir sınıfa, metoda veya değişkene ekstra bir bilgi eklemek istiyorsanız ve 
+bu bilgiyi çalışma zamanında (runtime) almak istiyorsanız, marker annotation kullanabilirsiniz.

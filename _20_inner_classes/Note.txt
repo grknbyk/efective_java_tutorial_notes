@@ -1,0 +1,49 @@
+1-Statik İç İçe Geçmiş Sınıflar (Static Nested Classes):
+    -Dış sınıfın statik bir üyesi olarak tanımlanır.
+    -Statik oldukları için dış sınıfın örnek (non-static) değişkenlerine veya metotlarına doğrudan erişemezler. 
+        Ancak dış sınıfın statik üyelerine doğrudan erişebilirler.
+    
+    Örnek:
+    class DışSınıf {
+        static class İçSınıf {
+            // sınıf içeriği
+        }
+    }
+
+
+2-Statik Olmayan İç İçe Geçmiş Sınıflar (Non-static Nested Classes) veya İç Sınıflar (Inner Classes):
+    -Dış sınıfın örneğine bağlı olarak var olur.
+    -Dış sınıfın hem örnek (non-static) hem de statik üyelerine doğrudan erişebilirler.
+    -Bellek sızıntısına yol açabilir. Bunun yerine zorunda olmadıkça Static Nested Class kullanımı daha az sorun yaratır.
+    
+    Örnek:
+    class DışSınıf {
+        class İçSınıf {
+            // sınıf içeriği
+        }
+    }
+
+3-Yerel Sınıflar (Local Classes):
+    -Metod içerisinde tanımlanan sınıflardır.
+    -Sadece tanımlandığı metod içerisinde kullanılır.
+    
+    Örnek:
+    class DışSınıf {
+        void birMetot() {
+            class YerelSınıf {
+                // sınıf içeriği
+            }
+        }
+    }
+
+4-Anonim Sınıflar (Anonymous Classes):
+    -İsimsiz sınıflardır.
+    -Genellikle sadece bir kere kullanılmak üzere, hemen bir interface'in veya sınıfın bir örneğini oluşturmak için kullanılır.
+    
+    Örnek:    
+    new BirInterface() {
+        @Override
+        public void birMetot() {
+            // metod içeriği
+        }
+    };

@@ -1,0 +1,22 @@
+önce Bigram.java'yı çalıştırıp göz atın. daha sonra Bigram2.java yı çalıştırın.
+farkı bulabildiniz mi?
+
+    Bigram'da methodlar doğru gibi gözüküyor, hata'da vermiyor.
+
+	// looks like overriding but it is not
+	// it is overloading
+
+    public boolean equals(Bigram b) {
+		return b.first == first;
+	}
+
+	public int hashCode() {
+		return 31 * first;
+	}
+
+	// equals(Object o) şeklinde methodu override edebilir
+	// equals(Bigram b) parametre farklı olduğu için methodu overload ediyor
+	// bu yüzden doğru çalışmıyor
+	// eğer başına @Override annotation'ı koysaydık
+	// hata vericekti, ve bunu yanlış yazdığımızı fark edebilicektik
+	// bu yüzden annotation kullanmak önemli

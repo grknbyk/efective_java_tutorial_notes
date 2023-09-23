@@ -1,0 +1,2 @@
+Method reference, lambda'ya göre daha okunabilir ve standart olduğu için öncelikle tercih edilebilir.
+lambda expression ile oluşturacağınız şey hali hazırda varsa method reference kullanabilirsiniz.

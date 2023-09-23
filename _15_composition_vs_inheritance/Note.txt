@@ -1,0 +1,12 @@
+Tanım: 
+Kalıtım, bir sınıfın (alt sınıf veya türetilmiş sınıf) başka bir sınıftan (üst sınıf) özelliklerini 
+ve metodlarını miras almasına olanak tanır.
+Inheritance örneği:
+Hayvan ve Kedi -> Her kedi bir hayvandır. bundan dolayı kedi class'ın hayvan class'ı inherit etmesi gerekir.
+
+Tanım: 
+Kompozisyon, bir sınıfın diğer sınıflara referanslar içermesi ile oluşturulan bir tasarım ilkesidir. 
+Özellikleri ve metotları miras almak yerine, bir sınıf diğer sınıfların örneklerini içerir.
+Composition örneği:
+Kütüphane ve Kitap -> Kütüphanenin kitap'ı inherit etmesine gerek yoktur. Kütüphane kitapın özelliklerine sahip değildir.
+                        Fakat Kütüphane kitap içerebilir.

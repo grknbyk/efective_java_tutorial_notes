@@ -1,0 +1,17 @@
+		// compile time da belirleniyor. Yanlış yönlendirebilir.
+		// It is bad practice to write code whose behavior is likely to confuse programmers
+		// Therefore you should avoid confusing uses of overloading.
+		
+		
+		
+		
+		// Notes
+		// not have to overloaded methods have the same number of parameter
+		
+		
+		// ObjectOutputStream
+		
+		// create different and specif methods. instead of bunch of write methods; writeLong, writeRead etc..
+			//ObjectOutputStream writeInt - writeLong etc.. therefore readInt, readLong etc..
+
+TestDrive.java göz at

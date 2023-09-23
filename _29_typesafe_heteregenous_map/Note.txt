@@ -1,0 +1,26 @@
+typesafe heterogeneous container kavramı, 
+bir konteynerin farklı türlerdeki nesneleri saklayabilmesi ve 
+bunları çekerken dönüş türü bilgisi olmadan tür güvenliğini koruyabilmesi anlamına gelir. 
+Bu kavramı daha iyi anlamak için genellikle Class sınıfını anahtar olarak kullanan bir Mapten bahsedilir.
+
+Bu fikir, Java'nın jeneriklik özelliklerini ve Class tipini kullanarak gerçekleştirilir.
+
+Örnek olarak, aşağıdaki gibi bir TypesafeHeterogeneousMap yapısını ele alalım:
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TypesafeHeterogeneousMap {
+    private Map<Class<?>, Object> map = new HashMap<>();
+
+    public <T> void put(Class<T> type, T instance) {
+        if (type == null) {
+            throw new NullPointerException("Type is null");
+        }
+        map.put(type, instance);
+    }
+
+    public <T> T get(Class<T> type) {
+        return type.cast(map.get(type));
+    }
+}

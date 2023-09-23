@@ -1,0 +1,2 @@
+1- Sabit değerler tutmak için interface değil utility class oluşturun.
+2- TestDrive'da interface yararına bakabilirsiniz

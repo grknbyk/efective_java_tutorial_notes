@@ -1,0 +1,3 @@
+Özetle, boş bir dizi ya da koleksiyon yerine asla null döndürmeyin.
+Bu, API'nizin kullanımını daha zor ve hata yapmaya daha yatkın hale getirir,
+ve bu, performans avantajı sağlamaz.

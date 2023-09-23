@@ -1,0 +1,5 @@
+ŞarkıYazarı.java interface'inde gördüğümüz üzere, eğer interface'e yeni bir method eklersek, 
+bu methodu kullanan tüm sınıfların bu yeni metodu eklemesi gerekir. 
+Ancak methodun başına 'default' anahtar kelimesini eklersek, bu zorunluluğu ortadan kaldırabiliriz. 
+Böylece, bu interface'i kullanan sınıflar doğrudan yeni methodu varsayılan olarak alır.
+İstendiği takdirde de implemantasyon yapan sınıflar bu method'u override edebilir.

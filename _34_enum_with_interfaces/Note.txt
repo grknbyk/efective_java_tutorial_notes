@@ -1,0 +1,1 @@
+Java'da enum class standart olarak finaldır.

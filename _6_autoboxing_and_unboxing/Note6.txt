@@ -1,0 +1,22 @@
+Autoboxing & Unboxing nedir?
+
+Wrapper classlar ile işlem yaparken
+Integer variable = 3; yazdığımızda arkaplan Integer variable = Integer.valueOf(3); kodu çalışır. buna Autoboxing denir.
+bu değişkeni kullanmaya kalktığımızda ise, variable * 2; diyelim. bu kod variable.intValue() * 2 şekilde çalışır.
+Buna da Unboxing denir.
+
+Tavsiye: Integer x = new Integer(3); yerine Integer x = Integer.valueOf(3); kullanmak daha performanslı olduğu söyleniyor.
+
+Wrapper classları generic (type,T) kullanırken kullanmak zorundayız. primitive type türü ile generic oluşturamıyoruz.
+Wrapper classın dezavantajı, primitive değere erişimin yavaş olmasıdır. yani zorunda olmadıkça primitive type kullanmak performans 
+açışından avantajlıdır.
+
+performans açısında zorunda olmadıkça
+
+Integer x = 3; (burda fazladan methodlar çağırılıyor (Integer.valueOf(3);)) yerine
+int x = 3; kullanmalıyız.
+
+-------------------
+
+String a = new String("elma"); bu şekilde string oluşturmak yerine alttaki şekilde string oluşturmak daha hızlı gerçekleşir.
+String b = "elma";

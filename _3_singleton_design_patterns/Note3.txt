@@ -1,0 +1,22 @@
+Singleton Design Patterns
+
+LazyCache:  bir tane instance (private static variable), bir tane getInstance(public static method), ve bir tane private
+            contructor oluşturulur. instance initiate edilmez. getInstance çağırılınca if ile kontrol edilir 
+            ve initiate edilmediyse initiate edilir. daha sonraki çağırmalarda bu initiate edilen instance kullanılır.
+
+    dezavantajı: eğer iki tane thread aynı anda getInstanceı çağırırsa farklı instance oluşturma durumları olabilir.
+
+EagerCache: bir tane instance (private static variable), bir tane getInstance(public static method), ve bir tane private
+            contructor oluşturulur. instance direkt olarak variable'ı tanımlarken oluşturulur (initiate edilir).
+    
+    avantajı: LazyCache'teki dezavantaj ortadan kalkar.   
+    dezavantajı: direkt olarak heap'te yer tutar.
+
+EnumCache: (CacheSingleton.java) (Önerilen)
+
+        avantajı:   LazyCache'teki dezavantaj ortadan kalkar. EagerCache'teki gibi bir yapıya gerek yok. 
+                    instance (private static variable), getInstance(public static method), ve bir tane private
+                    contructor oluşturmaya gerek kalmaz.
+
+Önce LazyCache.java, sonra EagerCache.java, sonra CacheSingleton.java classlarına bakın,
+Test.java da farklarını gözlemleyin

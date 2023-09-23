@@ -1,0 +1,9 @@
+Neden generics kullanmanın avantajları
+-Tür Güvenliği: Derleyici, tür hatalarını tespit eder, bu nedenle çalışma zamanında hatalara neden olma olasılığı azalır.
+
+-Tür Dönüşümüne Gerek Yok:  Jenerik olmayan koleksiyonlarda (örn. eski Java sürümlerindeki Vector veya ArrayList) bir öğeyi 
+                            eklediğinizde ve sonra geri aldığınızda öğeyi doğru türe dönüştürmeniz gerekebilir. 
+                            Jeneriklerle bu tür dönüşümlere gerek kalmaz.
+
+-Kodun Yeniden Kullanılabilirliği:  Aynı algoritmayı farklı türler üzerinde çalıştırmak için jenerik sınıf veya metot 
+                                    oluşturabilirsiniz.

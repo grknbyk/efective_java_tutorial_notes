@@ -1,0 +1,2 @@
+İki tane sınıfı tek bir dosyada tanımlamayın.
+Eğer böyle bir kullanım illaki gerekli ise private static tanımlayabilirsiniz.

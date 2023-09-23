@@ -1,0 +1,3 @@
+immutable class'ları final olarak tasarlayın. aksi takdirde herhangi bir class
+bu class'ı extend etmesi halinde immutable class değerlerini değiştirebilir.
+bu da immutable class'ın doğasına aykırıdır.

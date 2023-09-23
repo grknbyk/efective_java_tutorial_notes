@@ -1,0 +1,3 @@
+Builder Design Pattern
+neyi çözer. eğer bir class içinde çok opsiyonel fieldlarınız varsa bunları zincirleme şekilde oluşturmanızı sağlar.
+örnek: StarbucksBuilder sb = new StarbucksBuilder.Builder("tall").yumuşakİçenler("ben yumuşak istiyorum").build();

@@ -1,0 +1,11 @@
+utility class nedir?
+bir tane private içi boş contructor (isteğe bağlı throw new AssertionError(); yazılabilir), ve static methodlardan oluşturulur.
+amacı diğer birçok yerde ortak olarak kullanılacak methodları tek bir yerde toplamaktır.
+
+normal utility class: yukardaki gibi oluşturulur.
+
+Abstract utility class: nesnesi oluşturulmadığı için tercih edilebilir fakat başka bir class extendlerse sıkıntı. 
+yani avantajı private contructor oluşturmuyorsunuz.
+
+******************************************************************************************
+Enum utility class: (en mantıklısı), contructor ile de uğraşmazsınız, extend de edilemez.

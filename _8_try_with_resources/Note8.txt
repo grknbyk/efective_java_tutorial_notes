@@ -1,0 +1,31 @@
+Eğer finallyde ekstra bir şeyler yazmam gerekmiyorsa örnekteki gibi,
+Try,Finally yerine Try with Resources kullan!
+
+Avantaj1:   Tüm kapanması gereken şeyleri otamtik kapar .kod kalabalığını engeller. daha temiz kod oluşur.
+            Finally bloğunda oluşabilecek hataları ortadan kaldırır.
+
+
+try{
+    bufferreader1
+    bufferreader2
+    bufferreader3
+
+    int x = 10 / 0;
+}catch (ArithmeticException e){
+    print (e)
+}finaly{
+    int x = 10 / 0;
+    bufferreader1.close
+    bufferreader2.close
+    bufferreader3.close
+}
+
+=
+
+try (   bufferreader1;
+        bufferreader2;
+        bufferreader3){
+
+}catch (ArithmeticException e){
+    print (e)
+}

@@ -1,0 +1,8 @@
+-Ordinal nedir? OrdinalExample.java dosyasını run ederek görebilirsiniz.
+index değerlerine benzetebiliriz.
+
+-Peki kullanmalı mıyız?
+Bir tanesi silindiğinde sonrasındaki değerlerin ordinalleri 1 eksileceği için karmaşıklık yaratabilir.
+Ayrıca sıraya göre değer alırlar. Aynı array'deki indexlemede olduğu gibi.
+Ensemble.java dosyasını incelediğinizde göreceksiniz ki daha esnek ve daha kolay ekleme çıkarma yapabileceğimiz bir
+yapı var. Ordinal'ler yerine böyle bir yapı kullanmak daha mantıklı.

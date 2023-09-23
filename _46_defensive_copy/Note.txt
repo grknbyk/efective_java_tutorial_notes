@@ -1,0 +1,28 @@
+mutable objelerden referans(parametre,vs.) alarak, immutable, (final) objeler oluştururken
+bunların bir kopyasını oluşturmamız lazımdır. aksi halde referans verdiğimiz objeler mutable olduğu için
+onlardaki değişiklik immutable objemize'de yansıyacaktır.
+
+örnek bir period classım var.
+
+public final class Period 
+	private final Date start;
+	private final Date end;
+
+// yanlış kullanım
+	public Period(Date start, Date end) {
+		if (start.compareTo(end) > 0)
+			throw new IllegalArgumentException(start + " after " + end);
+		this.start = start;
+		this.end = end;
+	}
+
+
+// doğru kullanım
+	// Repaired constructor - makes defensive copies of parameters (Page 232)
+	public Period(Date start, Date end, String aklıma) {
+		this.start = new Date(start.getTime()); // defensive copy
+		this.end = new Date(end.getTime()); // defensive copy
+		this.aklıma = aklıma;
+		if (this.start.compareTo(this.end) > 0)
+			throw new IllegalArgumentException(this.start + " after " + this.end);
+	}

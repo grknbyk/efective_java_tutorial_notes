@@ -1,0 +1,7 @@
+Dependency injection:
+üç şekilde olabilir.
+- constructor inejction
+- setter inejction
+- interface inejction
+
+direkt bu packageların altın test.java'lara bakabilirsin, en son da kalanlara isteğe bağlı göz atabilirsin

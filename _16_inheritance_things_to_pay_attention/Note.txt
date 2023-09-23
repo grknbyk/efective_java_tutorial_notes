@@ -1,0 +1,42 @@
+1- Eğer oluşturduğunuz bir class'ın extends edilmemesini istiyorsak bu class'ı final olarak tanımlayabiliriz.
+Ya da içine bir tane private constructor ekleyebiliriz.
+
+2- Constructor'da override method çağrılmasının açabileceği hatalar.
+
+//Class whose constructor invokes an overridable method. NEVER DO THIS! 
+
+public class Super {
+	// Broken - constructor invokes an overridable method
+	public Super() {
+		overrideMe();
+	}
+	
+	public void overrideMe() {
+	
+	}
+}
+
+//Demonstration of what can go wrong when you override a method  called from constructor
+
+public final class Sub extends Super {
+	// Blank final, set by constructor
+	private final Instant instant;
+
+	Sub() {
+		instant = Instant.now();
+	}
+
+	// Overriding method invoked by superclass constructor
+    // So, when called function below, instant not initiated, it is null
+	@Override
+	public void overrideMe() {
+		System.out.println(instant);
+	}
+
+	
+	public static void main(String[] args) {
+		Sub sub = new Sub();
+		sub.overrideMe();
+	}
+
+}

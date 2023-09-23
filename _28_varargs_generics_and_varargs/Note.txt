@@ -1,0 +1,3 @@
+// It is unsafe to store a value in a generic varargs array parameter -> checkout the Dangerous.java
+// List as a typesafe alternative to a generic varargs parameter -> checkout the FlattenWithList.java
+// Safe method with a generic varargs parameter (indicating with annotaion) -> checkout the FlattenWithVarargs.java

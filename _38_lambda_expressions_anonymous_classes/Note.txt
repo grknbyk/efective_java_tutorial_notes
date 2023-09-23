@@ -1,0 +1,1 @@
+Anonymous Class yerine lambda expression tercih edin.
